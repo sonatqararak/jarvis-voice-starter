@@ -1,0 +1,11 @@
+# Copy/adapt manually into your own SSH config. No keys or host fingerprints are bundled.
+Host YOUR_VM_SSH_ALIAS
+    HostName YOUR_VM_HOST
+    User YOUR_VM_USER
+    IdentityFile ~/.ssh/YOUR_OWN_PRIVATE_KEY
+    IdentitiesOnly yes
+    StrictHostKeyChecking yes
+    ServerAliveInterval 15
+    ServerAliveCountMax 3
+# First verify the host fingerprint using an independent trusted channel and add it
+# to known_hosts yourself. Never disable host-key checking to make setup pass.

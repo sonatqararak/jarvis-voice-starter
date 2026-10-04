@@ -1,0 +1,8 @@
+{
+  "vm_host": "YOUR_VM_SSH_ALIAS",
+  "session": "share-kit",
+  "herdr": "herdr",
+  "socket": "~/.config/herdr/sessions/share-kit/herdr.sock",
+  "terminal": "Terminal",
+  "wake_word": false
+}
