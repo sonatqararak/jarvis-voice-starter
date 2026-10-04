@@ -2,7 +2,7 @@
 
 A small self-hosted starter. Your desktop listens, your server routes agent requests, and your own accounts do the work.
 
-**See it first:** open [the visual welcome page](docs/index.html). No account or installation is needed to explore it. Examples are simulated, not recordings.
+**See it first:** [play the visual welcome](https://sonatqararak.github.io/jarvis-voice-starter/). No account or installation is needed to explore it. The tracker story is reconstructed from documented events; page opening is shown as a separate documented capability, not one recorded loop. You can also open `docs/index.html` locally.
 
 **Make it yours:** use this repository as a template or download its source. The starter uses push-to-talk, not an always-on wake word. No proprietary wake-word model, cloud classifier, customer connector or private deployment is included.
 
