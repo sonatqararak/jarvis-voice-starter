@@ -4,6 +4,8 @@
 
 A scan of the packaged text files found no IP literals, email addresses, provider tokens, private key blocks, assigned secrets, personal absolute paths or session UUIDs. This scan supplements a source allowlist; it is not proof that arbitrary future contributions are safe.
 
+Phone-review revision: the public post preview is bundled with the welcome page. The same 18 tests passed again; both page scripts and both Lua files parsed. Microphone command errors now release the busy flag so the user can retry. The public handle and links use `soyakaai-studio`.
+
 ## Still unverified
 
 Fresh speech dependency resolution, real microphone use, OS permissions, real Hammerspoon rendering, Ubuntu GTK behavior and real-provider task submission have not been exercised in this packaging run. These are recipient-machine acceptance steps, not completed tests. No services or permissions were changed on the owner's live system.
