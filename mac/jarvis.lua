@@ -14,7 +14,8 @@ local function exec(file,data,callback)
   task=hs.task.new(python,function(code,out,err)
     tasks[task]=nil
     local ok,r=pcall(hs.json.decode,out or '')
-    if ok and r then callback(r) else show('Jarvis: '..(err or 'request failed')) end
+    if ok and type(r)=='table' then callback(r)
+    else callback({error=true,message='Request failed. Check the kit Python environment and retry.'}) end
   end,{base..'/bin/'..file})
   tasks[task]=true
   if data then task:setInput(hs.json.encode(data)..'\n') end
@@ -53,6 +54,7 @@ local function dictate()
   micBusy=true;show('Listening locally…')
   exec('mic_once.py',nil,function(r)
     micBusy=false
+    if r.error then reply(r);return end
     if not r.text or r.text=='' then show('No speech heard');return end
     local b,reviewed=hs.dialog.textPrompt('Paste into '..destination:name()..'?','Review dictation. Enter is not pressed.',r.text,'Paste','Cancel')
     if b~='Paste' then show('Cancelled');return end
@@ -75,6 +77,7 @@ local function listen()
   micBusy=true;show('Listening locally…')
   exec('mic_once.py',nil,function(r)
     micBusy=false
+    if r.error then reply(r);return end
     if r.text and r.text~='' then dispatch(r.text) else show('No speech heard') end
   end)
 end
