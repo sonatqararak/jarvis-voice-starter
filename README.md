@@ -2,7 +2,7 @@
 
 A small self-hosted starter. Your desktop listens, your server routes agent requests, and your own accounts do the work.
 
-**See it first:** [play the visual welcome](https://soyakaai-studio.github.io/jarvis-voice-starter/). No account or installation is needed to explore it. Explore how my personal Jarvis connects stored knowledge, AI agents and desktop apps. The animated overview uses illustrative commands and screens. You can also open `docs/index.html` locally.
+**See it first:** [play the visual welcome](https://soyakaai-studio.github.io/jarvis-voice-starter/). No account or installation is needed to explore it. Explore the Saudi month-end concept demo, with sample payments, Mudad, Zoho and ZATCA screens. These portal integrations are illustrative and are not included in this starter. You can also open `docs/index.html` locally.
 
 [Preview the unpublished X and LinkedIn drafts on your phone](https://soyakaai-studio.github.io/jarvis-voice-starter/social-preview.html) · [Download the source ZIP](https://github.com/soyakaai-studio/jarvis-voice-starter/archive/refs/heads/main.zip)
 
