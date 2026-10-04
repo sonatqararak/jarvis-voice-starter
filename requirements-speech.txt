@@ -1,0 +1,6 @@
+# Optional local microphone/STT; installed on the desktop, never on the VM.
+numpy>=1.26,<3
+scipy>=1.11,<2
+sounddevice>=0.5,<1
+faster-whisper>=1.1,<2
+# Wake-word dependencies are deliberately omitted from the default setup.
